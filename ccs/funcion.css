@@ -272,11 +272,11 @@ label {
 :focus {outline: none;
 }
 
-.form-signin input:focus, textarea:focus, .form-signup input:focus, textarea:focus {
+.form-signin input:focus, textarea:focus, textarea:focus {
     background: rgba(255,255,255,.3);
     border: none; 
     padding-right: 40px;
-    transition: background .5s ease;
+    transition: .5s ease;
  }
 
 [type="checkbox"]:not(:checked),

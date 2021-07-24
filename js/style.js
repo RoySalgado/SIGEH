@@ -10,17 +10,21 @@ $(function () {
     });
 });
 
-$(function () {
-    $(".btn-signup").click(function () {
+
+    const registro=()=>{
         $(".nav").toggleClass("nav-up");
         $(".form-signup-left").toggleClass("form-signup-down");
         $(".success").toggleClass("success-left");
         $(".frame").toggleClass("frame-short");
-    });
-});
+    }
+        
+    
 
-$(function () {
-    $(".btn-signin").click(function () {
+
+const iniciar=()=>{
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("password").value;
+    if(email != "" && pass != ""){
         $(".btn-animate").toggleClass("btn-animate-grow");
         $(".welcome").toggleClass("welcome-left");
         $(".cover-photo").toggleClass("cover-photo-down");
@@ -28,8 +32,11 @@ $(function () {
         $(".profile-photo").toggleClass("profile-photo-down");
         $(".btn-goback").toggleClass("btn-goback-up");
         $(".forgot").toggleClass("forgot-fade");
-    });
-});
+    }
+    
+}
+        
+
 
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '2017-06-01';
