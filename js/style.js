@@ -36,7 +36,20 @@ const iniciar=()=>{
     
 }
         
-
+const descargar =()=>{
+    let response = grecaptcha.getResponse();
+    if(response.length != 0){
+        console.log("Hola")
+    }else{
+      
+            Swal.fire({
+                icon: 'error',
+                title: `El captcha no ha sido aceptado`,
+                text: 'Deberá aceptar el captcha para continuar'
+            })
+        
+    }
+}
 
 var dateControl = document.querySelector('input[type="date"]');
 dateControl.value = '2017-06-01';
